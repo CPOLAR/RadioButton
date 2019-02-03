@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="radiobuttons.FXMLDocumentController">
+    <children>
+        <Button layoutX="126" layoutY="350" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
+        <Label layoutX="126" layoutY="310" minHeight="16" minWidth="69" fx:id="label" />
+        <VBox spacing="10" layoutX="20" layoutY="20"  >
+            <VBox spacing="10"  >
+                <fx:define>
+                    <ToggleGroup fx:id="tgroup"/>
+                </fx:define>
+                <children>
+                    <Label layoutX="10" layoutY="20" text="Choose the time, then click the button:" />
+                    <RadioButton fx:id="POSTLATEFRINGE" text="1:00 AM to 2:00 AM" toggleGroup="$tgroup"/>
+                    <RadioButton fx:id="EARLYMORNING" text="6:00 AM to 10:00 AM" toggleGroup="$tgroup"/>
+                    <RadioButton fx:id="DAYTIME" text="10:00 AM to 4:30 PM" toggleGroup="$tgroup"/>
+                    <RadioButton fx:id="EARLYFRINGE" text="4:30 PM to 7:30 PM" toggleGroup="$tgroup"/>
+                    <RadioButton fx:id="PRIMEACCESS" text="7:30 PM to 8:00 PM" toggleGroup="$tgroup"/>
+                    <RadioButton fx:id="PRIMETIME" text="8:00 PM to 11:00 PM" toggleGroup="$tgroup"/>
+                    <RadioButton fx:id="LATENEWS" text="11:00 PM to 11:30 PM" toggleGroup="$tgroup"/>
+                </children>
+            </VBox>
+            
+           
+      
+        </VBox>
+    </children>
+</AnchorPane>
