@@ -29,19 +29,19 @@ public class FXMLDocumentController implements Initializable {
     final ToggleGroup group;
 
     @FXML
-    private RadioButton plfButton = new RadioButton("POST LATE FRINGE");
+    private RadioButton postlatefringe = new RadioButton("POST LATE FRINGE");
     @FXML
-    private RadioButton emButton = new RadioButton("EARLY MORNING");
+    private RadioButton earlymorning = new RadioButton("EARLY MORNING");
     @FXML
-    private RadioButton dtButton = new RadioButton("DAYTIME");
+    private RadioButton daytime = new RadioButton("DAYTIME");
     @FXML
-    private RadioButton efButton = new RadioButton("EARLY FRINGE");
+    private RadioButton earlyfringe = new RadioButton("EARLY FRINGE");
     @FXML
-    private RadioButton paButton = new RadioButton("PRIME ACCESS");
+    private RadioButton primeaccess = new RadioButton("PRIME ACCESS");
     @FXML
-    private RadioButton ptButton = new RadioButton("PRIME TIME");
+    private RadioButton primetime = new RadioButton("PRIME TIME");
     @FXML
-    private RadioButton lnButton = new RadioButton("LATE NEWS");
+    private RadioButton latenews = new RadioButton("LATE NEWS");
 
     boolean rbpl = false, rbem = false, rbdt = false, rbef = false, rbpa = false, rbpt = false, rbln = false;
 
@@ -71,20 +71,20 @@ public class FXMLDocumentController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        plfButton.setToggleGroup(group);
-        plfButton.setUserData("POST LATE FRINGE");
-        emButton.setToggleGroup(group);
-        emButton.setUserData("EARLY MORNING");
-        dtButton.setToggleGroup(group);
-        dtButton.setUserData("DAYTIME");
-        efButton.setToggleGroup(group);
-        efButton.setUserData("EARLY FRINGE");
-        paButton.setToggleGroup(group);
-        paButton.setUserData("PRIME ACCESS");
-        ptButton.setToggleGroup(group);
-        ptButton.setUserData("PRIME TIME");
-        lnButton.setToggleGroup(group);
-        lnButton.setUserData("LATE NEWS");
+        postlatefringe.setToggleGroup(group);
+        postlatefringe.setUserData("POST LATE FRINGE");
+        earlymorning.setToggleGroup(group);
+        earlymorning.setUserData("EARLY MORNING");
+        daytime.setToggleGroup(group);
+        daytime.setUserData("DAYTIME");
+        earlyfringe.setToggleGroup(group);
+        earlyfringe.setUserData("EARLY FRINGE");
+        primeaccess.setToggleGroup(group);
+        primeaccess.setUserData("PRIME ACCESS");
+        primetime.setToggleGroup(group);
+        primetime.setUserData("PRIME TIME");
+        latenews.setToggleGroup(group);
+        latenews.setUserData("LATE NEWS");
 
         group.selectedToggleProperty().addListener(new ChangeListener<Toggle>() {
             public void changed(ObservableValue<? extends Toggle> ov, Toggle old_toggle, Toggle new_toggle) {
@@ -97,54 +97,54 @@ public class FXMLDocumentController implements Initializable {
                         rbpa = false;
                         rbpt = false;
                         rbln = false;
-//                    } else if (group.getSelectedToggle().getUserData().toString().equalsIgnoreCase("EARLY MORNING")) {
-//                        rbpl = false;
-//                        rbem = true;
-//                        rbdt = false;
-//                        rbef = false;
-//                        rbpa = false;
-//                        rbpt = false;
-//                        rbln = false;
-//                    } else if (group.getSelectedToggle().getUserData().toString().equalsIgnoreCase("DAYTIME")) {
-//                        rbpl = false;
-//                        rbem = false;
-//                        rbdt = true;
-//                        rbef = false;
-//                        rbpa = false;
-//                        rbpt = false;
-//                        rbln = false;
-//                    } else if (group.getSelectedToggle().getUserData().toString().equalsIgnoreCase("EARLY FRINGE")) {
-//                        rbpl = false;
-//                        rbem = false;
-//                        rbdt = false;
-//                        rbef = true;
-//                        rbpa = false;
-//                        rbpt = false;
-//                        rbln = false;
-//                    } else if (group.getSelectedToggle().getUserData().toString().equalsIgnoreCase("PRIME ACCESS")) {
-//                        rbpl = false;
-//                        rbem = false;
-//                        rbdt = false;
-//                        rbef = false;
-//                        rbpa = true;
-//                        rbpt = false;
-//                        rbln = false;
-//                    } else if (group.getSelectedToggle().getUserData().toString().equalsIgnoreCase("PRIME TIME")) {
-//                        rbpl = false;
-//                        rbem = false;
-//                        rbdt = false;
-//                        rbef = false;
-//                        rbpa = false;
-//                        rbpt = true;
-//                        rbln = false;
-//                    } else if (group.getSelectedToggle().getUserData().toString().equalsIgnoreCase("LATE NEWS")) {
-//                        rbpl = false;
-//                        rbem = false;
-//                        rbdt = false;
-//                        rbef = false;
-//                        rbpa = false;
-//                        rbpt = false;
-//                        rbln = true;
+                    } else if (group.getSelectedToggle().getUserData().toString().equalsIgnoreCase("EARLY MORNING")) {
+                        rbpl = false;
+                        rbem = true;
+                        rbdt = false;
+                        rbef = false;
+                        rbpa = false;
+                        rbpt = false;
+                        rbln = false;
+                    } else if (group.getSelectedToggle().getUserData().toString().equalsIgnoreCase("DAYTIME")) {
+                        rbpl = false;
+                        rbem = false;
+                        rbdt = true;
+                        rbef = false;
+                        rbpa = false;
+                        rbpt = false;
+                        rbln = false;
+                    } else if (group.getSelectedToggle().getUserData().toString().equalsIgnoreCase("EARLY FRINGE")) {
+                        rbpl = false;
+                        rbem = false;
+                        rbdt = false;
+                        rbef = true;
+                        rbpa = false;
+                        rbpt = false;
+                        rbln = false;
+                    } else if (group.getSelectedToggle().getUserData().toString().equalsIgnoreCase("PRIME ACCESS")) {
+                        rbpl = false;
+                        rbem = false;
+                        rbdt = false;
+                        rbef = false;
+                        rbpa = true;
+                        rbpt = false;
+                        rbln = false;
+                    } else if (group.getSelectedToggle().getUserData().toString().equalsIgnoreCase("PRIME TIME")) {
+                        rbpl = false;
+                        rbem = false;
+                        rbdt = false;
+                        rbef = false;
+                        rbpa = false;
+                        rbpt = true;
+                        rbln = false;
+                    } else if (group.getSelectedToggle().getUserData().toString().equalsIgnoreCase("LATE NEWS")) {
+                        rbpl = false;
+                        rbem = false;
+                        rbdt = false;
+                        rbef = false;
+                        rbpa = false;
+                        rbpt = false;
+                        rbln = true;
                     }
                 }
             }

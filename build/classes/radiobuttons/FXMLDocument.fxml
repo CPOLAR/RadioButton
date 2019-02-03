@@ -18,13 +18,13 @@
                 </fx:define>
                 <children>
                     <Label layoutX="10" layoutY="20" text="Choose the time, then click the button:" />
-                    <RadioButton fx:id="POSTLATEFRINGE" text="1:00 AM to 2:00 AM" toggleGroup="$tgroup"/>
-                    <RadioButton fx:id="EARLYMORNING" text="6:00 AM to 10:00 AM" toggleGroup="$tgroup"/>
-                    <RadioButton fx:id="DAYTIME" text="10:00 AM to 4:30 PM" toggleGroup="$tgroup"/>
-                    <RadioButton fx:id="EARLYFRINGE" text="4:30 PM to 7:30 PM" toggleGroup="$tgroup"/>
-                    <RadioButton fx:id="PRIMEACCESS" text="7:30 PM to 8:00 PM" toggleGroup="$tgroup"/>
-                    <RadioButton fx:id="PRIMETIME" text="8:00 PM to 11:00 PM" toggleGroup="$tgroup"/>
-                    <RadioButton fx:id="LATENEWS" text="11:00 PM to 11:30 PM" toggleGroup="$tgroup"/>
+                    <RadioButton fx:id="postlatefringe" text="1:00 AM to 2:00 AM" toggleGroup="$tgroup"/>
+                    <RadioButton fx:id="earlymorning" text="6:00 AM to 10:00 AM" toggleGroup="$tgroup"/>
+                    <RadioButton fx:id="daytime" text="10:00 AM to 4:30 PM" toggleGroup="$tgroup"/>
+                    <RadioButton fx:id="earlyfringe" text="4:30 PM to 7:30 PM" toggleGroup="$tgroup"/>
+                    <RadioButton fx:id="primeaccess" text="7:30 PM to 8:00 PM" toggleGroup="$tgroup"/>
+                    <RadioButton fx:id="primetime" text="8:00 PM to 11:00 PM" toggleGroup="$tgroup"/>
+                    <RadioButton fx:id="latenews" text="11:00 PM to 11:30 PM" toggleGroup="$tgroup"/>
                 </children>
             </VBox>
             
